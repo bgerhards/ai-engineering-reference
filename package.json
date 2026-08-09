@@ -1,0 +1,42 @@
+{
+  "name": "app-sample",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reference implementation of a TDD-first, hexagonally-architected service with an AI engineering pipeline (agents, skills, hooks, validators, spec drivers).",
+  "type": "module",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "start": "tsx src/main.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:unit": "vitest run tests/unit",
+    "test:contract": "vitest run tests/contract",
+    "test:integration": "vitest run tests/integration",
+    "test:coverage": "vitest run --coverage",
+    "validate:arch": "node scripts/validate/architecture.mjs",
+    "validate:specs": "node scripts/validate/specs.mjs",
+    "validate:tests": "node scripts/validate/test-discipline.mjs",
+    "gate": "node scripts/validate/gate.mjs",
+    "gate:quick": "node scripts/validate/gate.mjs --quick"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@types/node": "^22.13.0",
+    "@vitest/coverage-v8": "^3.0.5",
+    "eslint": "^9.20.0",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.23.0",
+    "vitest": "^3.0.5"
+  }
+}
