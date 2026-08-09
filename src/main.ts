@@ -6,7 +6,7 @@ const port = Number(process.env['PORT'] ?? 3000);
 const server = createHttpServer(createAppRouter(createDefaultAdapters()));
 
 server.listen(port, () => {
-  console.log(`app-sample listening on http://localhost:${String(port)}`);
+  console.log(`ai-engineering-reference listening on http://localhost:${String(port)}`);
 });
 
 const shutdown = (): void => {

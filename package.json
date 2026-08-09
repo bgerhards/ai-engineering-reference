@@ -1,5 +1,5 @@
 {
-  "name": "app-sample",
+  "name": "ai-engineering-reference",
   "version": "0.1.0",
   "private": true,
   "description": "Reference implementation of a TDD-first, hexagonally-architected service with an AI engineering pipeline (agents, skills, hooks, validators, spec drivers).",
